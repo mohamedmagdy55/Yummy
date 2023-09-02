@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Yummy</title>
+</head>
+<body>
+    <div class="loading position-fixed top-0 start-0 end-0 bottom-0 bg-black justify-content-center align-items-center">
+        <i class="fa fa-spinner fa-spin fa-5x"></i>
+    </div>
+
+    <nav class="side-nav-menu  w-25 vh-100 position-fixed  top-0 bottom-0 bg-black">
+
+        <div class="nav-tab  d-flex flex-column justify-content-between vh-100 p-4">
+            <ul class="nav-links py-4 overflow-hidden">
+                 <li onclick="showSearchInputs(); closeSideNav()" class="py-2 position-relative cursor-pointer">Search</li>
+                <li onclick="getCategories(); closeSideNav()" class="py-2 position-relative cursor-pointer">Categories</li>
+                <li onclick="searchByArea(); closeSideNav()" class="py-2 position-relative cursor-pointer">Area</li>
+                <li onclick=" searchByIngredients(); closeSideNav()" class="py-2 position-relative cursor-pointer">Ingredients</li>
+                <li onclick="showContactInputs(); closeSideNav()" class="py-2 position-relative cursor-pointer">Contact Us</li>
+            </ul>
+            <div class="nav-footer  px-4">
+                <div class="icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <div class="footer">
+                    <p>Copyright Â© 2019 All Rights <br>Reserved.</p>
+                </div>
+            </div>
+        </div>
+        <div class="nav-header position-absolute vh-100 top-0 end-0  d-flex flex-column justify-content-between py-4 text-center px-2 bg-white text-black">
+            <img   class="logo mx-auto w-100" src="images/logo.png" alt="" srcset="">     
+            <div class="open-close-icon">
+                <i  class="fa-solid  fa-align-justify fa-2x "></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-globe d-block"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+      
+    </nav>
+    <section id="search-container" class="search-container   my-4 p-1">   </section> 
+    <section class="main-container position-relative  ">
+        <div class="inner-loading-screen  top-0 end-0 start-0 bottom-0 w-100 vh-100  d-none flex-column justify-content-between py-4  px-2  text-center bg-black text-white ">
+            <i class="fa fa-spinner fa-spin fa-5x"></i>
+        </div>
+        <div class="container">
+            <div class="row py-5 g-4 " id="row-data">
+    
+            </div>    
+        </div>
+    </section>
+
+
+   
+<script src="js/code.jquery.com_jquery-3.7.0.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
